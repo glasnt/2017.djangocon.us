@@ -2,6 +2,9 @@ language: ruby
 rvm:
   - 2.2
 
+before_install:
+  - sudo apt-get install libcurl3-dev
+
 script:
   - bundle exec rake test
 
